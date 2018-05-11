@@ -15,10 +15,10 @@
         <img class="img-icons" src="@/assets/placeholder.png"/>
         <img class="img-icons" src="@/assets/plus.png"/>
         <img class="img-icons" src="@/assets/checked.png"/>
-      </div>     
+      </div>
     </v-container>
     <v-carousel>
-      <v-carousel-item v-for="item in contents">
+      <v-carousel-item v-for="(item, i) in contents" :key="i">
          <v-flex xs12>
             <v-card class="white--text">
               <v-container fluid grid-list-lg>
