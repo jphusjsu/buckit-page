@@ -1,20 +1,11 @@
 <template>
   <div>
-    <v-toolbar color="grey darken-4" dark>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title class="white--text">BuckIt!</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>About Us</v-btn>
-        <v-btn flat>Team</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
     <v-container>
       <p id="slogan-style">{{ slogan }}</p>
       <div>
-        <img class="img-icons" src="@/assets/placeholder.png"/>
-        <img class="img-icons" src="@/assets/plus.png"/>
-        <img class="img-icons" src="@/assets/checked.png"/>
+        <img class="img-icons" src="@/assets/icons/placeholder.png"/>
+        <img class="img-icons" src="@/assets/icons/plus.png"/>
+        <img class="img-icons" src="@/assets/icons/checked.png"/>
       </div>
     </v-container>
     <v-carousel>
@@ -72,7 +63,7 @@ export default {
           pt1: '- Create, Edit, Delete Buckets',
           pt2: '- Add activities to any Buckets',
           pt3: '- Unlimited buckets',
-          srcs: 'createBucket.gif'
+          srcs: 'createBucketShort.gif'
         },
         {
           headline: 'Activity Feature',
@@ -80,7 +71,7 @@ export default {
           pt1: '- Create an activity',
           pt2: '- Add an activity to your Buckets!',
           pt3: '- Mark an activity \'Completed\' as you go',
-          srcs: 'createActivity.gif'
+          srcs: 'createActivityShort.gif'
         },
         {
           headline: 'Comments/Voting Feature',
@@ -88,7 +79,7 @@ export default {
           pt1: '- See/Add comments of an activity',
           pt2: '- Make \'Favorite\' an activity',
           pt3: '',
-          srcs: 'commentAndVote.gif'
+          srcs: 'commentAndLikeShort.gif'
         },
         {
           headline: 'Mapping Feature',
@@ -96,14 +87,14 @@ export default {
           pt1: '- Activities around your current location',
           pt2: '- Zoom in/out to explore activities in a bigger radius',
           pt3: '- View details of an activity from the map',
-          srcs: 'useMaps.gif'
+          srcs: 'useMapsShort.gif'
         }
       ]
     }
   },
   methods: {
     getImage (img) {
-      return require('../assets/' + img)
+      return require('../assets/app-resource/' + img)
     }
   }
 }
