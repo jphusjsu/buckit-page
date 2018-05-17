@@ -22,6 +22,7 @@
             <h4>Connect with {{ content.name }}</h4>
             <a :href="content.linkedInURL" target="_blank"><img :src="getImage(content.linkedInLogo)"/></a>
             <a :href="content.gitHubURL" target="_blank"><img :src="getImage(content.gitHubLogo)"/></a>
+            <a :href="content.emailURL"><img :src="getImage(content.emailLogo)"/></a>
           </div>
         </div>
       </div>
@@ -42,7 +43,9 @@ export default {
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com/in/william-jp-hu',
           gitHubLogo: 'github-logo.svg',
-          gitHubURL: 'https://github.com/jphusjsu'
+          gitHubURL: 'https://github.com/jphusjsu',
+          emailLogo: 'opened-email-envelope.svg',
+          emailURL: 'mailto:william.hu719@gmail.com'
         },
         {
           name: 'Michael Hyun',
@@ -52,7 +55,9 @@ export default {
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com/in/michael-hyun/',
           gitHubLogo: 'github-logo.svg',
-          gitHubURL: 'https://github.com/michaelhyun'
+          gitHubURL: 'https://github.com/michaelhyun',
+          emailLogo: 'opened-email-envelope.svg',
+          emailURL: 'mailto:michael.hyun3@gmail.com'
         },
         {
           name: 'Samnang Sok',
@@ -62,7 +67,9 @@ export default {
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com',
           gitHubLogo: 'github-logo.svg',
-          gitHubURL: 'https://github.com/samnangsok-se'
+          gitHubURL: 'https://github.com/samnangsok-se',
+          emailLogo: 'opened-email-envelope.svg',
+          emailURL: 'mailto:cambospice3@gmail.com'
         },
         {
           name: 'Josh Ventocilla',
@@ -72,7 +79,9 @@ export default {
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com',
           gitHubLogo: 'github-logo.svg',
-          gitHubURL: 'https://github.com/j0mbajuice'
+          gitHubURL: 'https://github.com/j0mbajuice',
+          emailLogo: 'opened-email-envelope.svg',
+          emailURL: 'mailto:joshua.ventocilla@sjsu.edu'
         }
       ]
     }
@@ -179,7 +188,7 @@ export default {
       height: 1700px;
     }
   }
-    /* iphone X */
+  /* iphone X */
   @media (min-height: 751px) and (max-height: 820px) {
     .slogan-size {
       font-size: 45px;
