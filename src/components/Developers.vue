@@ -150,7 +150,6 @@ export default {
     height: 32px;
   }
 
-
   @media (max-width: 600px) {
     .flip-container:hover .flipper, .flip-container.hover .flipper {
       /*transform: rotateY(180deg);*/
