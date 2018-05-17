@@ -21,12 +21,12 @@
         </router-link>
       </div>
       <div class="hidden-md-and-up">
-        <v-layout wrap style="height: 150px;">
+        <v-layout wrap style="height: 250px;">
           <v-navigation-drawer
             v-model="drawer"
             temporary
             absolute
-            height="200px"
+            height="250px"
           >
             <v-list class="pa-1">
               <v-list-tile avatar to="/">
@@ -64,6 +64,7 @@ export default {
       drawer: null,
       items: [
         { title: 'Learn More', icon: 'info', linkTo: 'LearnMore' },
+        { title: 'Demo Video', icon: 'video_library', linkTo: 'Youtube' },
         { title: 'Gallery', icon: 'photo_library', linkTo: 'Gallery' },
         { title: 'Developers', icon: 'people', linkTo: 'Developers' }
       ]

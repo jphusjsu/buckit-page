@@ -2,7 +2,7 @@
   <div class="main-container">
     <v-container text-xs-center white--text>
       <p class="slogan-size">BuckIt demo hosted in Youtube</p>
-      <youtube video-id="HfTy2VMQdkY"></youtube>
+      <youtube video-id="HfTy2VMQdkY" player-width=300></youtube>
     </v-container>
   </div>
 </template>
