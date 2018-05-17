@@ -48,7 +48,7 @@ export default {
         {
           name: 'Michael Hyun',
           pictureURL: 'michael.jpeg',
-          contribution: 'Michael is a full-stack developer. He worked on various essential components for BuckIt, and helped on the re-designing the overall UI once we had the functionality in place',
+          contribution: 'Michael is a full-stack developer. He worked on various essential components for BuckIt, and helped on re-designing the overall UI once we had the functionality in place',
           funFact: 'I Love In-N-Out animal fries :-)',
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com/in/michael-hyun/',
@@ -59,7 +59,7 @@ export default {
           name: 'Samnang Sok',
           pictureURL: 'samnang.jpg',
           contribution: 'Samnang is a full-stack developer. Some of his work on this project include the login functionality, profile page, complete page, complete and delete functionality, edit profile, edit buckit, and others',
-          funFact: 'I always laugh, even for no reason, because always happy',
+          funFact: 'I always laugh, even for no reason, because I\'m always happy',
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com',
           gitHubLogo: 'github-logo.svg',
