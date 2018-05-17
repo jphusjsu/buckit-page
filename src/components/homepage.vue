@@ -1,24 +1,24 @@
 <template>
   <div>
-    <v-container>
-      <p id="slogan-style">{{ slogan }}</p>
-      <div>
-        <img class="img-icons" src="@/assets/icons/placeholder.png"/>
-        <img class="img-icons" src="@/assets/icons/plus.png"/>
-        <img class="img-icons" src="@/assets/icons/checked.png"/>
-      </div>
+    <v-container text-xs-center white--text>
+      <p class="slogan-size">{{ slogan }}</p>
     </v-container>
-    <v-carousel :interval=20000>
+    <div>
+      <img class="img-icons" src="@/assets/icons/placeholder.png"/>
+      <img class="img-icons" src="@/assets/icons/plus.png"/>
+      <img class="img-icons" src="@/assets/icons/checked.png"/>
+    </div>
+    <v-carousel :interval=20000 class="carousel-size">
       <v-carousel-item v-for="(item, i) in contents" :key="i">
-         <v-flex xs12>
+         <v-flex sm md12>
             <v-card class="white--text">
               <v-container fluid grid-list-lg>
                 <v-layout row wrap justify-center>
-                  <v-flex xs4>
+                  <v-flex sm2 md4>
                     <div>
-                      <div class="display-2">{{ item.headline }}</div>
+                      <div class="carousel-text">{{ item.headline }}</div>
                       <br>
-                      <v-card-text class="headline" style="text-align: left;">
+                      <v-card-text class="text-xs-left carousel-text-sm">
                         {{ item.content }}<br><br>
                         {{ item.pt1 }}<br>
                         {{ item.pt2 }}<br>
@@ -26,7 +26,7 @@
                       </v-card-text>
                     </div>
                   </v-flex>
-                  <v-flex xs5>
+                  <v-flex md5 class="hidden-sm-and-down">
                     <v-card-media
                       :src="getImage(item.srcs)"
                       height="420px"
@@ -39,7 +39,7 @@
           </v-flex>
       </v-carousel-item>
     </v-carousel>
-    <app-footer></app-footer>
+    <br><br><br>
   </div>
 </template>
 
@@ -101,19 +101,44 @@ export default {
 </script>
 
 <style scoped>
-  #slogan-style {
-    margin-top: 50px;
-    /*text-align: center;*/
-    color: white;
-    font-size: 50px;
+  .slogan-size {
+    font-size: 70px;
+    margin-bottom: 0;
+  }
+  .carousel-text {
+    font-size: 55px;
+  }
+  .carousel-text-sm {
+    font-size: 25px;
   }
   .img-icons {
     margin-right: 50px;
     margin-left: 50px;
+    margin-bottom: 20px;
     height: 65px;
     width: 65px;
     padding: 12px 12px 12px 12px;
     border-radius: 50%;
     background-color: white;
+  }
+
+  @media (max-width: 600px) {
+    .slogan-size {
+      font-size: 45px;
+      margin-bottom: 10px
+    }
+    .carousel-size {
+      height: 325px;
+    }
+    .carousel-text {
+      font-size: 35px;
+    }
+    .carousel-text-sm {
+      text-align: left;
+      font-size: 15px;
+    }
+    .img-icons {
+      margin: 0 12px 12px 12px;
+    }
   }
 </style>

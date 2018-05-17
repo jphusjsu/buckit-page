@@ -1,6 +1,8 @@
 <template>
-  <div class="container-size">
-    <p class="display-3 white--text" style="margin-bottom: 50px">Who's behind BuckIt!?</p>
+  <div>
+    <v-container text-xs-center white--text>
+      <p class="display-3" style="margin-bottom: 50px">Who's behind BuckIt!?</p>
+    </v-container>
     <div v-for="(content, i) in profileContents" :key="i" class="flip-container" ontouchstart="this.classList.toggle('hover');">
       <div class="flipper">
         <div class="front">
@@ -24,7 +26,7 @@
         </div>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </template>
 
@@ -84,9 +86,6 @@ export default {
 }
 </script>
 <style scoped>
-  .container-size {
-    margin-top: 100px;
-  }
   .picture {
     height: 250px;
     width: 250px;

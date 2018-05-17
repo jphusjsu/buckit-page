@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Homepage from '@/components/homepage'
+import Homepage from '@/components/Homepage'
 import Developers from '@/components/Developers'
 import LearnMore from '@/components/LearnMore'
 import Gallery from '@/components/GalleryPage'
