@@ -1,59 +1,26 @@
 <template>
   <div class="container-size">
     <p class="display-3 white--text" style="margin-bottom: 50px">Who's behind BuckIt!?</p>
-    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    <div v-for="(content, i) in profileContents" :key="i" class="flip-container" ontouchstart="this.classList.toggle('hover');">
       <div class="flipper">
         <div class="front">
           <!-- front content -->
-          <h1>Michael Hyun</h1>
-          <img class="picture" src="@/assets/profile/william.jpg"/>
+          <h1>{{ content.name }}</h1>
+          <img class="picture" :src="getImage(content.pictureURL)"/>
           <p>Software Engineering, SJSU</p>
         </div>
         <div class="back">
-          <h1>back</h1>
+          <h1 style="text-align: center">Biography</h1>
+          <h3>Contribution:</h3>
+          <p>{{ content.contribution }}</p>
+          <h3>Fun Fact:</h3>
+          <p>{{ content.funFact }}</p>
           <!-- back content -->
-        </div>
-      </div>
-    </div>
-    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-      <div class="flipper">
-        <div class="front">
-          <!-- front content -->
-          <h1>William (Jie Peng) Hu</h1>
-          <img class="picture" src="@/assets/profile/william.jpg"/>
-          <p>Software Engineering, SJSU</p>
-        </div>
-        <div class="back">
-          <h1>back</h1>
-          <!-- back content -->
-        </div>
-      </div>
-    </div>
-    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-      <div class="flipper">
-        <div class="front">
-          <!-- front content -->
-          <h1>Samnang Sok</h1>
-          <img class="picture" src="@/assets/profile/william.jpg"/>
-          <p>Software Engineering, SJSU</p>
-        </div>
-        <div class="back">
-          <h1>back</h1>
-          <!-- back content -->
-        </div>
-      </div>
-    </div>
-    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-      <div class="flipper">
-        <div class="front">
-          <!-- front content -->
-          <h1>Josh Ventocilla</h1>
-          <img class="picture" src="@/assets/profile/william.jpg"/>
-          <p>Software Engineering, SJSU</p>
-        </div>
-        <div class="back">
-          <h1>back</h1>
-          <!-- back content -->
+          <div class="cardFooter">
+            <h4>Connect with {{ content.name }}</h4>
+            <a :href="content.linkedInURL" target="_blank"><img :src="getImage(content.linkedInLogo)"/></a>
+            <a :href="content.gitHubURL" target="_blank"><img :src="getImage(content.gitHubLogo)"/></a>
+          </div>
         </div>
       </div>
     </div>
@@ -61,6 +28,61 @@
   </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+      profileContents: [
+        {
+          name: 'William Hu',
+          pictureURL: 'william.jpg',
+          contribution: 'William is a full-stack developer. He contributed with the Mapping components of BuckIt!',
+          funFact: 'He was born and raised in Venezuela a.k.a. LatinAsian',
+          linkedInLogo: 'linkedin-logo.svg',
+          linkedInURL: 'https://www.linkedin.com/in/william-jp-hu',
+          gitHubLogo: 'github-logo.svg',
+          gitHubURL: 'https://github.com/jphusjsu'
+        },
+        {
+          name: 'Michael Hyun',
+          pictureURL: 'logo.png',
+          contribution: '',
+          funFact: '',
+          linkedInLogo: 'linkedin-logo.svg',
+          linkedInURL: 'https://www.linkedin.com',
+          gitHubLogo: 'github-logo.svg',
+          gitHubURL: 'https://github.com/michaelhyun'
+        },
+        {
+          name: 'Samnang Sok',
+          pictureURL: 'samnang.jpg',
+          contribution: '',
+          funFact: '',
+          linkedInLogo: 'linkedin-logo.svg',
+          linkedInURL: 'https://www.linkedin.com',
+          gitHubLogo: 'github-logo.svg',
+          gitHubURL: 'https://github.com/samnangsok-se'
+        },
+        {
+          name: 'Josh Ventocilla',
+          pictureURL: 'logo.png',
+          contribution: '',
+          funFact: '',
+          linkedInLogo: 'linkedin-logo.svg',
+          linkedInURL: 'https://www.linkedin.com',
+          gitHubLogo: 'github-logo.svg',
+          gitHubURL: 'https://github.com/j0mbajuice'
+        }
+      ]
+    }
+  },
+  methods: {
+    getImage (img) {
+      return require('../assets/profile/' + img)
+    }
+  }
+}
+</script>
 <style scoped>
   .container-size {
     margin-top: 100px;
@@ -107,6 +129,21 @@
   }
   /* back, initially hidden pane */
   .back {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
     transform: rotateY(180deg);
+  }
+  .cardFooter {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .cardFooter img {
+    display: inline;
+    width: 32px;
+    height: 32px;
   }
 </style>

@@ -117,14 +117,3 @@ export default {
     background-color: white;
   }
 </style>
-
-<!-- <script>
-export default {
-  name: 'Homepage',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
-</script> -->
