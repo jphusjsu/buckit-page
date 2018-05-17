@@ -4,6 +4,7 @@ import Homepage from '@/components/Homepage'
 import Developers from '@/components/Developers'
 import LearnMore from '@/components/LearnMore'
 import Gallery from '@/components/GalleryPage'
+import Demo from '@/components/DemoPage'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/Gallery',
       name: 'Gallery',
       component: Gallery
+    },
+    {
+      path: '/Demo',
+      name: 'Demo',
+      component: Demo
     }
   ]
 })

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-container">
     <v-container text-xs-center white--text>
       <p class="slogan-size">We just had too much fun...</p>
     </v-container>
@@ -17,7 +17,7 @@
         </v-carousel-item>
       </v-carousel>
     </v-layout>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
   </div>
 </template>
 
@@ -50,18 +50,59 @@ export default {
 <style scoped>
   .slogan-size {
     font-size: 70px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
   }
   .image-size {
     height: 500px;
   }
-  @media (max-width: 600px) {
+  .main-container {
+    background-color: #F57C00;
+    width: 100%;
+    height: 800px;
+  }
+  /* iphone 6,7,8 */
+  @media (max-width: 600px) and (max-height: 680px) {
+    .slogan-size {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+    .image-size {
+      height: 300px;
+    }
+    .main-container {
+      height: 610px;
+    }
+    .carousel-size {
+      height: 325px;
+    }
+  }
+  /* iphone 6,7,8 PLUS */
+  @media (min-height: 681px) and (max-height: 750px) {
     .image-size {
       height: 300px;
     }
     .slogan-size {
       font-size: 45px;
       margin-bottom: 10px
+    }
+    .main-container {
+      height: 650px;
+    }
+    .carousel-size {
+      height: 325px;
+    }
+  }
+    /* iphone X */
+  @media (min-height: 751px) and (max-height: 820px) {
+    .image-size {
+      height: 300px;
+    }
+    .slogan-size {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+    .main-container {
+      height: 720px;
     }
     .carousel-size {
       height: 325px;

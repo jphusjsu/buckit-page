@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-container">
     <v-container text-xs-center white--text>
       <p class="slogan-size">Who's behind BuckIt!?</p>
     </v-container>
@@ -26,7 +26,6 @@
         </div>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </template>
 
@@ -149,17 +148,48 @@ export default {
     width: 32px;
     height: 32px;
   }
-
-  @media (max-width: 600px) {
-    .flip-container:hover .flipper, .flip-container.hover .flipper {
-      /*transform: rotateY(180deg);*/
-    }
+  .main-container {
+    background-color: #F57C00;
+    width: 100%;
+    height: 800px;
+  }
+  /* iphone 6,7,8 */
+  @media (max-width: 600px) and (max-height: 680px) {
     .slogan-size {
       font-size: 45px;
       margin-bottom: 10px
     }
     .flip-container {
       margin-left: 40px;
+    }
+    .main-container {
+      height: 1700px;
+    }
+  }
+  /* iphone 6,7,8 PLUS */
+  @media (min-height: 681px) and (max-height: 750px) {
+    .slogan-size {
+      font-size: 45px;
+      margin-bottom: 10px
+    }
+    .flip-container {
+      margin-left: 40px;
+    }
+    .main-container {
+      height: 1700px;
+    }
+  }
+    /* iphone X */
+  @media (min-height: 751px) and (max-height: 820px) {
+    .slogan-size {
+      font-size: 45px;
+      margin-bottom: 10px
+    }
+    .flip-container {
+      margin-left: 40px;
+    }
+    .main-container {
+      height: 1700px;
     }
   }
 </style>
