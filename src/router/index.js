@@ -4,7 +4,9 @@ import Homepage from '@/components/Homepage'
 import Developers from '@/components/Developers'
 import LearnMore from '@/components/LearnMore'
 import Gallery from '@/components/GalleryPage'
-import Demo from '@/components/DemoPage'
+import PDFReport from '@/components/PDFReport'
+import PDFPresentation from '@/components/PDFPresentation'
+import Youtube from '@/components/YoutubePage'
 
 Vue.use(Router)
 
@@ -31,9 +33,19 @@ export default new Router({
       component: Gallery
     },
     {
-      path: '/Demo',
-      name: 'Demo',
-      component: Demo
+      path: '/PDFReport',
+      name: 'PDFReport',
+      component: PDFReport
+    },
+    {
+      path: '/PDFPresentation',
+      name: 'PDFPresentation',
+      component: PDFPresentation
+    },
+    {
+      path: '/Youtube',
+      name: 'Youtube',
+      component: Youtube
     }
   ]
 })

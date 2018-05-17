@@ -10,7 +10,10 @@
         <router-link to="/LearnMore">
           <v-btn flat>Learn More</v-btn>
         </router-link>
-         <router-link to="/Gallery">
+        <router-link to="/Youtube">
+          <v-btn flat>Demo video</v-btn>
+        </router-link>
+        <router-link to="/Gallery">
           <v-btn flat>Gallery</v-btn>
         </router-link>
         <router-link to="/Developers">

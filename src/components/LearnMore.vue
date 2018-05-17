@@ -11,6 +11,13 @@
       <p class="title">Acknowledgements:</p>
       <p class="subheading">First and foremost we would like to thank Prof. Anna Meng for being our mentor and accepting our offer to be this project’s advisor. She has mentored us and guided us throughout the project from day one. We would also like to thank our friends and family for the support they have given us. Lastly, we would like to thank San Jose State University for this challenging, but extremely wonderful journey.
       </p>
+      <br>
+      <p class="title">Supporting Documents:</p>
+      <ul>
+        <li><a href="/#/PDFReport" target="_blank">2018_Final_Project_Report_BuckIt.pdf</a></li>
+        <li><a href="/#/PDFPresentation" target="_blank">2018_Final_presentation</a></li>
+      </ul>
+      <br><br>
       <p class="title">Credits:</p>
       <p class="subheading">Icons made by:</p>
       <ul style="padding-left: 20px">
@@ -25,6 +32,12 @@
         </li>
         <li>
           <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </li>
+        <li>
+          Main Apple Store logo taken from <a href="http://www.steamyconcepts.com/wp-content/uploads/Steamy-Concepts-Mobile-App-Store-Apple-iOS.png" title="Steamy Concepts" target="_blank">Steamy Concepts</a>
+        </li>
+        <li>
+          Some additional icons were taken from <a href="https://material.io/tools/icons/?style=baseline" target="_blank">Material.io</a>
         </li>
       </ul>
       <br>
@@ -54,6 +67,9 @@
 </template>
 
 <style scoped>
+  ul {
+    padding-left: 20px;
+  }
   @media (max-width: 600px) {
     .logo-img {
       width: 300px;

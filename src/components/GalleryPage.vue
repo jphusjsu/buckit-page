@@ -17,7 +17,6 @@
         </v-carousel-item>
       </v-carousel>
     </v-layout>
-    <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
   </div>
 </template>
 
@@ -58,7 +57,7 @@ export default {
   .main-container {
     background-color: #F57C00;
     width: 100%;
-    height: 800px;
+    height: 770px;
   }
   /* iphone 6,7,8 */
   @media (max-width: 600px) and (max-height: 680px) {
@@ -92,7 +91,7 @@ export default {
       height: 325px;
     }
   }
-    /* iphone X */
+  /* iphone X */
   @media (min-height: 751px) and (max-height: 820px) {
     .image-size {
       height: 300px;

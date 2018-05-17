@@ -39,7 +39,11 @@
           </v-flex>
       </v-carousel-item>
     </v-carousel>
-    <br><br><br>
+    <v-layout white--text>
+      <v-flex>
+        <p id="promotion-text">Coming soon . . . <img src="@/assets/app-resource/appStoreLogo.png" id="appleLogo"></p>
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
@@ -121,7 +125,14 @@ export default {
     border-radius: 50%;
     background-color: white;
   }
-
+  #promotion-text {
+    padding: 20px 0 30px 0;
+    font-size: 50px;
+  }
+  #appleLogo {
+    height: 70px;
+    width: 280px;
+  }
   @media (max-width: 600px) {
     .slogan-size {
       font-size: 45px;
@@ -129,7 +140,7 @@ export default {
     }
     .carousel-size {
       height: 350px;
-      margin-bottom: 120px;
+      margin-bottom: 10px;
     }
     .carousel-text {
       font-size: 35px;
@@ -140,6 +151,14 @@ export default {
     }
     .img-icons {
       margin: 0 12px 12px 12px;
+    }
+    #promotion-text {
+      padding: 0px 0 30px 0;
+      font-size: 30px;
+    }
+    #appleLogo {
+      height: 70px;
+      width: 280px;
     }
   }
 </style>
