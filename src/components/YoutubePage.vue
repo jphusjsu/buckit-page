@@ -24,7 +24,7 @@
       margin-bottom: 10px;
     }
     .main-container {
-      height: 610px;
+      height: 670px;
     }
   }
   /* iphone 6,7,8 PLUS */
