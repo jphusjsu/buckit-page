@@ -45,11 +45,11 @@ export default {
         },
         {
           name: 'Michael Hyun',
-          pictureURL: 'logo.png',
+          pictureURL: 'michael.jpeg',
           contribution: '',
           funFact: '',
           linkedInLogo: 'linkedin-logo.svg',
-          linkedInURL: 'https://www.linkedin.com',
+          linkedInURL: 'https://www.linkedin.com/in/michael-hyun/',
           gitHubLogo: 'github-logo.svg',
           gitHubURL: 'https://github.com/michaelhyun'
         },
