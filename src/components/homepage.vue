@@ -128,7 +128,8 @@ export default {
       margin-bottom: 10px
     }
     .carousel-size {
-      height: 325px;
+      height: 350px;
+      margin-bottom: 120px;
     }
     .carousel-text {
       font-size: 35px;

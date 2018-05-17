@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container text-xs-center white--text>
-      <p class="display-3" style="margin-bottom: 50px">Who's behind BuckIt!?</p>
+      <p class="slogan-size">Who's behind BuckIt!?</p>
     </v-container>
     <div v-for="(content, i) in profileContents" :key="i" class="flip-container" ontouchstart="this.classList.toggle('hover');">
       <div class="flipper">
@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </template>
 
@@ -86,6 +86,10 @@ export default {
 }
 </script>
 <style scoped>
+  .slogan-size {
+    font-size: 70px;
+    margin-bottom: 10px
+  }
   .picture {
     height: 250px;
     width: 250px;
@@ -93,7 +97,7 @@ export default {
   /* Source: https://davidwalsh.name/css-flip; */
   /* entire container, keeps perspective */
   .flip-container {
-    margin-right: 30px;
+    margin: 30px 30px 0px 0;
     display: inline-block;
     color: white;
     perspective: 1000px;
@@ -144,5 +148,19 @@ export default {
     display: inline;
     width: 32px;
     height: 32px;
+  }
+
+
+  @media (max-width: 600px) {
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+      /*transform: rotateY(180deg);*/
+    }
+    .slogan-size {
+      font-size: 45px;
+      margin-bottom: 10px
+    }
+    .flip-container {
+      margin-left: 40px;
+    }
   }
 </style>

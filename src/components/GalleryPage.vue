@@ -17,7 +17,7 @@
         </v-carousel-item>
       </v-carousel>
     </v-layout>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </template>
 
@@ -26,17 +26,22 @@ export default {
   data () {
     return {
       items: [
-        { src: 'senior_projectmeng.jpg' },
-        { src: 'senior_project.jpg' },
-        { src: 'senior_project-2.jpg' },
-        { src: 'senior_project-3.jpg' },
-        { src: 'senior_project-4.jpg' }
+        { src: 'gallery/senior_projectmeng.jpg' },
+        { src: 'gallery/senior_project.jpg' },
+        { src: 'gallery/senior_project-2.jpg' },
+        { src: 'gallery/senior_project-3.jpg' },
+        { src: 'gallery/senior_project-4.jpg' },
+        { src: 'app-resource/login.gif' },
+        { src: 'app-resource/createBucketShort.gif' },
+        { src: 'app-resource/createActivityShort.gif' },
+        { src: 'app-resource/commentAndLikeShort.gif' },
+        { src: 'app-resource/useMapsShort.gif' }
       ]
     }
   },
   methods: {
     getImage (img) {
-      return require('../assets/gallery/' + img)
+      return require('../assets/' + img)
     }
   }
 }
@@ -48,7 +53,7 @@ export default {
     margin-bottom: 10px
   }
   .image-size {
-    height: 650px;
+    height: 500px;
   }
   @media (max-width: 600px) {
     .image-size {
