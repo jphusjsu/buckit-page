@@ -36,7 +36,7 @@ export default {
         {
           name: 'William Hu',
           pictureURL: 'william.jpg',
-          contribution: 'William is a full-stack developer. He contributed with the Mapping components of BuckIt!',
+          contribution: 'William is a full-stack developer. He contributed with the Mapping components of BuckIt, and general bugs fixing in various BuckIt\'s components',
           funFact: 'He was born and raised in Venezuela a.k.a. LatinAsian',
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com/in/william-jp-hu',
@@ -46,8 +46,8 @@ export default {
         {
           name: 'Michael Hyun',
           pictureURL: 'michael.jpeg',
-          contribution: '',
-          funFact: '',
+          contribution: 'Michael is a full-stack developer. He worked on various essential components for BuckIt, and helped on the re-designing the overall UI once we had the functionality in place',
+          funFact: 'I Love In-N-Out animal fries :-)',
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com/in/michael-hyun/',
           gitHubLogo: 'github-logo.svg',
@@ -56,8 +56,8 @@ export default {
         {
           name: 'Samnang Sok',
           pictureURL: 'samnang.jpg',
-          contribution: '',
-          funFact: '',
+          contribution: 'Samnang is a full-stack developer. Some of his work on this project include the login functionality, profile page, complete page, complete and delete functionality, edit profile, edit buckit, and others',
+          funFact: 'I always laugh, even for no reason, because always happy',
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com',
           gitHubLogo: 'github-logo.svg',
@@ -65,9 +65,9 @@ export default {
         },
         {
           name: 'Josh Ventocilla',
-          pictureURL: 'logo.png',
-          contribution: '',
-          funFact: '',
+          pictureURL: 'josh.jpg',
+          contribution: 'Josh is a full-stack developer and took the Project Manager role for the entire project in which he made sure that schedule and general assignments were on track',
+          funFact: 'Our advisor thought I was Mexican',
           linkedInLogo: 'linkedin-logo.svg',
           linkedInURL: 'https://www.linkedin.com',
           gitHubLogo: 'github-logo.svg',
