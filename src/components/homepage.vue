@@ -8,7 +8,7 @@
         <img class="img-icons" src="@/assets/icons/checked.png"/>
       </div>
     </v-container>
-    <v-carousel>
+    <v-carousel :interval=20000>
       <v-carousel-item v-for="(item, i) in contents" :key="i">
          <v-flex xs12>
             <v-card class="white--text">
