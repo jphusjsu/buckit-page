@@ -105,7 +105,7 @@ export default {
   /* Medium laptop */
   @media (min-width: 960px) and (max-width: 1264px) {
     .main-container {
-      height: 700px;
+      height: 800px;
     }
     .image-size {
       height: 500px;
@@ -117,13 +117,13 @@ export default {
   /* Large laptop */
   @media (min-width: 1265px) {
     .main-container {
-      height: 850px;
+      height: 800px;
     }
     .image-size {
-      height: 600px;
+      height: 520px;
     }
     .carousel-size {
-      height: 650px;
+      height: 570px;
     }
   }
 </style>

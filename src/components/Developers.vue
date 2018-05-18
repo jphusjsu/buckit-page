@@ -213,7 +213,7 @@ export default {
   /* Large laptop */
   @media (min-width: 1265px) {
     .main-container {
-      height: 850px;
+      height: 800px;
     }
     .flip-container {
       margin-left: 20px;

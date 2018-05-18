@@ -47,4 +47,16 @@
       height: 720px;
     }
   }
+  /* Medium laptop */
+  @media (min-width: 960px) and (max-width: 1264px) {
+    .main-container {
+      height: 800px;
+    }
+  }
+  /* Large laptop */
+  @media (min-width: 1265px) {
+    .main-container {
+      height: 800px;
+    }
+  }
 </style>
