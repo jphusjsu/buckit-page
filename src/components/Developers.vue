@@ -201,4 +201,13 @@ export default {
       height: 1700px;
     }
   }
+  /* 13" Laptops */
+  @media (min-height: 635px) and (max-width: 1024px) {
+    .main-container {
+      height: 920px;
+    }
+    .flip-container {
+      margin-left: 70px
+    }
+  }
 </style>
