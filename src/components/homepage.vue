@@ -14,7 +14,7 @@
             <v-card class="white--text">
               <v-container fluid grid-list-lg>
                 <v-layout row wrap justify-center>
-                  <v-flex sm2 md4>
+                  <v-flex sm2 md6 lg4>
                     <div>
                       <div class="carousel-text">{{ item.headline }}</div>
                       <br>
@@ -26,10 +26,10 @@
                       </v-card-text>
                     </div>
                   </v-flex>
-                  <v-flex md5 class="hidden-sm-and-down">
+                  <v-flex md5 lg4 class="hidden-sm-and-down">
                     <v-card-media
                       :src="getImage(item.srcs)"
-                      height="420px"
+                      height="380px"
                       contain
                     ></v-card-media>
                   </v-flex>
@@ -110,7 +110,7 @@ export default {
     margin-bottom: 0;
   }
   .carousel-text {
-    font-size: 55px;
+    font-size: 45px;
   }
   .carousel-text-sm {
     font-size: 25px;
