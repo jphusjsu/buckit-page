@@ -175,8 +175,5 @@ export default {
     .carousel-text  {
       font-size: 35px;
     }
-    .carousel-text-sm {
-      margin-left: 25px;
-    }
   }
 </style>
