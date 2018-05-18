@@ -161,4 +161,22 @@ export default {
       width: 280px;
     }
   }
+  /* Medium laptop */
+  @media (min-width: 960px) and (max-width: 1264px) {
+    .carousel-text  {
+      font-size: 33px;
+    }
+    .carousel-text-sm {
+      font-size: 23px;
+    }
+  }
+  /* Large laptop */
+  @media (min-width: 1265px) {
+    .carousel-text  {
+      font-size: 35px;
+    }
+    .carousel-text-sm {
+      margin-left: 25px;
+    }
+  }
 </style>

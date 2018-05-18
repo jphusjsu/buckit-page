@@ -4,15 +4,10 @@
       <p class="slogan-size">We just had too much fun...</p>
     </v-container>
     <v-layout>
-      <v-carousel class="carousel-size">
+      <v-carousel class="carousel-size" interval=12000>
         <v-carousel-item v-for="(item,i) in items" :key="i">
           <v-flex>
             <img class="image-size" :src="getImage(item.src)">
-           <!--  <v-card-media
-            :src="getImage(item.src)"
-            height="650px"
-            contain
-            ></v-card-media> -->
           </v-flex>
         </v-carousel-item>
       </v-carousel>
@@ -105,6 +100,30 @@ export default {
     }
     .carousel-size {
       height: 325px;
+    }
+  }
+  /* Medium laptop */
+  @media (min-width: 960px) and (max-width: 1264px) {
+    .main-container {
+      height: 700px;
+    }
+    .image-size {
+      height: 500px;
+    }
+    .carousel-size {
+      height: 550px;
+    }
+  }
+  /* Large laptop */
+  @media (min-width: 1265px) {
+    .main-container {
+      height: 850px;
+    }
+    .image-size {
+      height: 600px;
+    }
+    .carousel-size {
+      height: 650px;
     }
   }
 </style>

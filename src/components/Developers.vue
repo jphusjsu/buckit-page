@@ -160,7 +160,7 @@ export default {
   .main-container {
     background-color: #F57C00;
     width: 100%;
-    height: 770px;
+    height: 900px;
   }
   /* iphone 6,7,8 */
   @media (max-width: 600px) and (max-height: 680px) {
@@ -201,13 +201,22 @@ export default {
       height: 1700px;
     }
   }
-  /* 13" Laptops */
-  @media (min-height: 635px) and (max-width: 1024px) {
-    .main-container {
-      height: 920px;
+  /* Medium laptop */
+  @media (min-width: 960px) and (max-width: 1264px) {
+   .main-container {
+      height: 900px;
     }
     .flip-container {
-      margin-left: 70px
+      margin-left: 70px;
+    }
+  }
+  /* Large laptop */
+  @media (min-width: 1265px) {
+    .main-container {
+      height: 850px;
+    }
+    .flip-container {
+      margin-left: 20px;
     }
   }
 </style>
