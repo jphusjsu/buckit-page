@@ -73,7 +73,7 @@ export default {
         },
         {
           name: 'Josh Ventocilla',
-          pictureURL: 'josh-2.jpg',
+          pictureURL: 'josh-3.jpg',
           contribution: 'Josh is a full-stack developer and took the Project Manager role for the entire project in which he made sure that schedule and general assignments were on track',
           funFact: 'Our advisor thought I was Mexican',
           linkedInLogo: 'linkedin-logo.svg',
